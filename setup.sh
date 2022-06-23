@@ -47,3 +47,21 @@ nvim -c 'PlugInstall --sync' +qa
 # Cleanup
 cd
 rm -rf dotfiles
+
+# Node install
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.zshrc
+nvm install --lts
+nvm use --lts
+
+# Coc Compile
+cd ~/.local/share/nvim/plugged/coc.nvim
+node install yarn -g
+yarn install
+
+# Miniconda install
+cd
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh
+conda install mamba -c conda-forge
