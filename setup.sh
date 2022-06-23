@@ -40,3 +40,6 @@ cd
 
 git config --global user.email "harshavardhan864.hk@gmail.com"
 git config --global user.name "kage08"
+
+# Install plugins
+nvim -c 'PlugInstall --sync' +qa
