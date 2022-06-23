@@ -37,3 +37,6 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ./pull.sh
 source ~/.zshrc
 cd
+
+git config --global user.email "harshavardhan864.hk@gmail.com"
+git config --global user.name "kage08"
