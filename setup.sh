@@ -47,4 +47,3 @@ nvim -c 'PlugInstall --sync' +qa
 # Cleanup
 cd
 rm -rf dotfiles
-rm -rf nvim-linux64
