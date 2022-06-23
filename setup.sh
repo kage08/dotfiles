@@ -43,3 +43,8 @@ git config --global user.name "kage08"
 
 # Install plugins
 nvim -c 'PlugInstall --sync' +qa
+
+# Cleanup
+cd
+rm -rf dotfiles
+rm -rf nvim-linux64
