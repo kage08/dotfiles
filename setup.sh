@@ -56,7 +56,7 @@ nvm use --lts
 
 # Coc Compile
 cd ~/.local/share/nvim/plugged/coc.nvim
-node install yarn -g
+npm install yarn -g
 yarn install
 
 # Miniconda install
