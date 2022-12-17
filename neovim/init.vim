@@ -33,6 +33,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'preservim/tagbar' 
 Plug 'junegunn/fzf.vim'
 Plug 'kien/ctrlp.vim'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 Plug 'neoclide/coc.nvim'
 Plug 'github/copilot.vim'
