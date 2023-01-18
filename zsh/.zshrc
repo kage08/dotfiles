@@ -77,6 +77,7 @@ plugins=(git
 	zsh-history-substring-search
 	fzf
 	poetry
+	z
 	)
 
 source $ZSH/oh-my-zsh.sh
