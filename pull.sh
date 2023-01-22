@@ -5,4 +5,5 @@ cp ./zsh/.zshrc ~/.zshrc
 
 cp ./tmux/.tmux.conf ~/.tmux.conf
 
+mkdir -p ~/.config/alacritty
 cp ./alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
