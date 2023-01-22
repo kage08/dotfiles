@@ -66,3 +66,12 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
 conda install mamba -c conda-forge
 mamba clean --all
+
+# Install Rustup
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# Install Juliaup
+curl -fsSL https://install.julialang.org | sh
+
+#Alacritty terminal
+cargo install alacritty
