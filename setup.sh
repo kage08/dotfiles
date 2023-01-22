@@ -73,5 +73,5 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # Install Juliaup
 curl -fsSL https://install.julialang.org | sh
 
-#Alacritty terminal
-cargo install alacritty exa bat dust ripgrep tokei hyperfine ytop zoxide delta
+# Rust utils
+cargo install jql exa bat du-dust ripgrep tokei hyperfine ytop zoxide git-delta bottom sd
