@@ -17,7 +17,7 @@ source ~/.bashrc
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 zsh
 curl -sS https://starship.rs/install.sh ~/.local/bin | sh -s -- --bin-dir ~/.local/bin
-echo -e '\nexport PATH="/home/user/.local/bin:$PATH"\n' >> ~/.zshrc
+echo -e '\nexport PATH="$HOME/.local/bin:$PATH"\n' >> ~/.zshrc
 echo -e 'eval "$(starship init zsh)"\n' >> ~/.zshrc
 source ~/.zshrc
 
