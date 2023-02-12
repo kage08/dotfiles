@@ -66,6 +66,7 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
 conda install mamba -c conda-forge
 mamba clean --all
+rm ./Miniconda3-latest-Linux-x86_64.sh
 
 # Install Rustup
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
