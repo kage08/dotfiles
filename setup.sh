@@ -62,6 +62,7 @@ yarn install
 # Miniconda install
 cd
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+# For arm: wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
 conda install mamba -c conda-forge
@@ -76,3 +77,11 @@ curl -fsSL https://install.julialang.org | sh
 
 # Rust utils
 cargo install jql exa bat du-dust ripgrep tokei hyperfine ytop zoxide git-delta bottom sd
+
+# latex install
+cd
+zcat install-tl-unx.tar.gz | tar xf -
+cd install-tl-* # fill this
+perl ./install-tl # Make sure the insstall folder is correct <D>
+# Should takke 2 hours!!
+echo -e '\nexport PATH="$HOME/.local/texlive/2022/bin:$PATH"\n' >> ~/.zshrc
