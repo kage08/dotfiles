@@ -2,7 +2,7 @@
 sh -c "$(wget -O- https://raw.githubusercontent.com/romkatv/zsh-bin/master/install)"
 
 #Neovim
-wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.tar.gz
+wget https://github.com/neovim/neovim/releases/download/v0.8.3/nvim-linux64.tar.gz
 tar xvf nvim-linux64.tar.gz
 ln -s $HOME/nvim-linux64/bin/nvim ~/.local/bin/nvim
 rm nvim-linux64.tar.gz
@@ -85,3 +85,6 @@ cd install-tl-* # fill this
 perl ./install-tl # Make sure the insstall folder is correct <D>
 # Should takke 2 hours!!
 echo -e '\nexport PATH="$HOME/.local/texlive/2022/bin:$PATH"\n' >> ~/.zshrc
+
+# Lunarvim install
+LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/fc6873809934917b470bff1b072171879899a36b/utils/installer/install.sh)
