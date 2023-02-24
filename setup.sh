@@ -77,6 +77,7 @@ curl -fsSL https://install.julialang.org | sh
 
 # Rust utils
 cargo install jql exa bat du-dust ripgrep tokei hyperfine ytop zoxide git-delta bottom sd
+cargo install bob-nvim gitui irust evcxr_jupyter cargo-info nu zellij mprocs coreutils
 
 # latex install
 cd
