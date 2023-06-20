@@ -76,7 +76,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 curl -fsSL https://install.julialang.org | sh
 
 # Rust utils
-cargo install jql exa bat du-dust ripgrep tokei hyperfine ytop zoxide git-delta bottom sd
+cargo install jql exa bat du-dust ripgrep tokei hyperfine ytop zoxide git-delta bottom sd dutree
 cargo install bob-nvim gitui irust evcxr_jupyter cargo-info nu zellij mprocs coreutils cargo-update
 
 # latex install
