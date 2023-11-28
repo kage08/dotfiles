@@ -2,7 +2,7 @@
 sh -c "$(wget -O- https://raw.githubusercontent.com/romkatv/zsh-bin/master/install)"
 
 #Neovim
-wget https://github.com/neovim/neovim/releases/download/v0.8.3/nvim-linux64.tar.gz
+wget https://github.com/neovim/neovim/releases/download/v0.9.4/nvim-linux64.tar.gz
 tar xvf nvim-linux64.tar.gz
 ln -s $HOME/nvim-linux64/bin/nvim ~/.local/bin/nvim
 rm nvim-linux64.tar.gz
@@ -65,8 +65,8 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 # For arm: wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
-conda install mamba -c conda-forge
-mamba clean --all
+conda install mamba -c conda-forge -y
+mamba clean --all -y
 rm ./Miniconda3-latest-Linux-x86_64.sh
 
 # Install Rustup
@@ -88,4 +88,4 @@ perl ./install-tl # Make sure the insstall folder is correct <D>
 echo -e '\nexport PATH="$HOME/.local/texlive/2022/bin:$PATH"\n' >> ~/.zshrc
 
 # Lunarvim install
-LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/fc6873809934917b470bff1b072171879899a36b/utils/installer/install.sh)
+LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
