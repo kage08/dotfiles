@@ -80,7 +80,6 @@ curl -fsSL https://install.julialang.org | sh
 cargo install jql exa bat du-dust ripgrep tokei hyperfine ytop zoxide git-delta bottom sd dutree flamegraph samply
 cargo install bob-nvim gitui irust evcxr_jupyter cargo-info nu zellij mprocs coreutils cargo-update counts exa navi
 
-echo -e '\nexport PATH="$HOME/.local/share/bob/nvim-bin:$PATH"\n' >> ~/.zshrc
 
 # latex install
 cd
