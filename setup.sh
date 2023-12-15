@@ -75,6 +75,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # Install Juliaup
 curl -fsSL https://install.julialang.org | sh
 
+# Install libssl-dev pkg-config
 # Rust utils
 cargo install jql exa bat du-dust ripgrep tokei hyperfine ytop zoxide git-delta bottom sd dutree flamegraph samply
 cargo install bob-nvim gitui irust evcxr_jupyter cargo-info nu zellij mprocs coreutils cargo-update counts exa navi
