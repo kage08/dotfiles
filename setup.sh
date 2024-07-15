@@ -69,6 +69,8 @@ conda install mamba -c conda-forge -y
 mamba clean --all -y
 rm ./Miniconda3-latest-Linux-x86_64.sh
 
+curl -sSf https://rye.astral.sh/get | RYE_INSTALL_OPTION="--yes" bash
+
 # Install Rustup
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
@@ -77,8 +79,8 @@ curl -fsSL https://install.julialang.org | sh
 
 # Install libssl-dev pkg-config
 # Rust utils
-cargo install jql exa bat du-dust ripgrep tokei hyperfine ytop zoxide git-delta bottom sd dutree flamegraph samply
-cargo install bob-nvim gitui irust evcxr_jupyter cargo-info nu zellij mprocs coreutils cargo-update counts exa navi
+cargo install jql exa bat du-dust ripgrep tokei hyperfine ytop zoxide git-delta bottom sd dutree flamegraph samply fd-find zoxide
+cargo install bob-nvim gitui irust evcxr_jupyter cargo-info nu zellij mprocs coreutils cargo-update counts exa navi macchina cargo-info
 
 
 # latex install
