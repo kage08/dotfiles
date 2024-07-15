@@ -77,7 +77,9 @@ plugins=(git
 	zsh-autosuggestions
 	zsh-history-substring-search
 	fzf
-	poetry
+	rye
+	docker
+	docker-compose
 	z
 	)
 
