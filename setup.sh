@@ -54,6 +54,8 @@ source ~/.zshrc
 nvm install --lts
 nvm use --lts
 
+npm install -g localtunnel
+
 # Coc Compile
 cd ~/.local/share/nvim/plugged/coc.nvim
 npm install yarn -g
@@ -79,7 +81,7 @@ curl -fsSL https://install.julialang.org | sh
 
 # Install libssl-dev pkg-config
 # Rust utils
-cargo install jql exa bat du-dust ripgrep tokei hyperfine ytop zoxide git-delta bottom sd dutree flamegraph samply fd-find zoxide
+cargo install jql exa bat du-dust ripgrep tokei hyperfine ytop zoxide git-delta bottom sd dutree flamegraph samply fd-find zoxide bore
 cargo install bob-nvim gitui irust evcxr_jupyter cargo-info nu zellij mprocs coreutils cargo-update counts exa navi macchina cargo-info
 
 
