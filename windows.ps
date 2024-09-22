@@ -4,6 +4,13 @@ winget install SomePythonThings.WingetUIStore 7zip.7zip VideoLAN.VLC RARLab.WinR
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 choco install mpv
 
+# Scoop
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+# Uniget
+winget install --exact --id SomePythonThings.WingetUIStore --source winget
+
 # Powershell
 oh-my-posh init pwsh | Invoke-Expression
 Invoke-Expression (&starship init powershell)
