@@ -3,3 +3,11 @@ winget install SomePythonThings.WingetUIStore 7zip.7zip VideoLAN.VLC RARLab.WinR
 # Choco
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 choco install mpv
+
+# Powershell
+oh-my-posh init pwsh | Invoke-Expression
+Invoke-Expression (&starship init powershell)
+Import-Module PSReadLine
+Set-PSReadLineOption -PredictionSource History
+Import-Module syntax-highlighting
+Import-Module PSFzf
