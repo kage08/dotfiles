@@ -73,8 +73,11 @@ rm ./Miniconda3-latest-Linux-x86_64.sh
 
 # Install Rustup
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source ~/.zshrc
+rustup completions zsh > ~/.zfunc/_rustu
 
 curl -LsSf https://astral.sh/uv/install.sh | sh
+echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
 
 # Install Juliaup
 curl -fsSL https://install.julialang.org | sh
