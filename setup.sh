@@ -63,13 +63,12 @@ yarn install
 
 # Miniconda install
 cd
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-# For arm: wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
-chmod +x Miniconda3-latest-Linux-x86_64.sh
-./Miniconda3-latest-Linux-x86_64.sh
-conda install mamba -c conda-forge -y
-mamba clean --all -y
-rm ./Miniconda3-latest-Linux-x86_64.sh
+curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+bash Miniforge3-$(uname)-$(uname -m).sh
+rm Miniforge3-$(uname)-$(uname -m).sh
+# source "${HOME}/conda/etc/profile.d/conda.sh"
+# For mamba support also run the following command
+# source "${HOME}/conda/etc/profile.d/mamba.sh"
 
 # Install Rustup
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -78,6 +77,9 @@ rustup completions zsh > ~/.zfunc/_rustu
 
 curl -LsSf https://astral.sh/uv/install.sh | sh
 echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
+
+curl -fsSL https://pixi.sh/install.sh | bash
+export PATH="/Users/harshapk/.pixi/bin:$PATH"
 
 # Install Juliaup
 curl -fsSL https://install.julialang.org | sh
