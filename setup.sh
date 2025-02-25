@@ -90,13 +90,23 @@ cargo install jql exa bat du-dust ripgrep tokei hyperfine ytop zoxide git-delta 
 cargo install bob-nvim gitui irust evcxr_jupyter cargo-info nu zellij mprocs cargo-update counts exa navi macchina cargo-info
 cargo install coreutils diffutils findutils
 
-# latex install
+# latex install linux
 cd
 zcat install-tl-unx.tar.gz | tar xf -
 cd install-tl-* # fill this
 perl ./install-tl # Make sure the insstall folder is correct <D>
 # Should takke 2 hours!!
 echo -e '\nexport PATH="$HOME/.local/texlive/2022/bin:$PATH"\n' >> ~/.zshrc
+
+# latex install macos
+brew install --cask basictex
+sudo tlmgr install texcount
+sudo tlmgr install latexindent
+sudo tlmgr install latexmk
+sudo cpan -i Unicode::GCString
+sudo cpan -i File::HomeDir
+sudo chown -R harshavardhankamarthi /usr/local/texlive
+echo -e '\nexport PATH="/usr/local/texlive/2024basic/bin/universal-darwin:$PATH"\n' >> ~/.zshrc # Check version number and path
 
 # Lunarvim install
 LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
