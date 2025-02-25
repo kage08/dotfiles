@@ -80,6 +80,7 @@ echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
 
 curl -fsSL https://pixi.sh/install.sh | bash
 export PATH="/Users/harshapk/.pixi/bin:$PATH"
+echo 'eval "$(pixi completion --shell zsh)"' >> ~/.zshrc
 
 # Install Juliaup
 curl -fsSL https://install.julialang.org | sh
