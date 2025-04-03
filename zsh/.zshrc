@@ -80,6 +80,7 @@ plugins=(git
 	docker
 	docker-compose
 	z
+	conda-zsh-completion
 	)
 
 source $ZSH/oh-my-zsh.sh
